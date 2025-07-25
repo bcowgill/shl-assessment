@@ -25,6 +25,18 @@ The task manager tries to assign resources optimally so all employees can comple
 
 Output N numbers on a single line showing the optimal order of employee id's to complete their assignments. Or if the assignments cannot be completed output -1 alone on the line.
 
+Disputed
+3 (books)
+2 2 3
+3 3 (needed)
+2 4 0 (emp0) not enough of book #1
+0 0 1 (emp1) only needs one of book 2 to finish task
+0 1 3 (emp2)
+3 3 (used already)
+3 5 4 (emp0)
+1 3 4 (emp1)
+2 3 5 (emp2)
+#=1 2 0
 
 =cut
 
