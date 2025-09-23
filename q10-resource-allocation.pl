@@ -227,6 +227,7 @@ sub take {
 		$raNeed->[$resId] = 0;
 	}
 }
+# MUSTDO my answer differs from the spreadsheet answer
 __DATA__
 3
 2 2 3
