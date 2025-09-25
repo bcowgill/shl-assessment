@@ -88,7 +88,7 @@ sub get_primes {
 sub is_prime {
 	my ($score) = @ARG;
 
-	return 1 if $Prime{$score};
+	return 1 if $Prime{$score} || $score == 2;
 	return 0 if $score <= 1;
 	# handle anything divisible by two first
 	return 0 if $score % 2 == 0;
@@ -112,4 +112,19 @@ __DATA__
 #=0
 16
 0 1 2 3 4 5 6 7 29 557 2147483647 2147483646 2147483646 2147483647 18446744073709551557 18446744073709551556
-#=8
+#=9
+1
+0
+#=0
+1
+1
+#=0
+1
+2
+#=1
+1
+-1
+#=0
+1
+3
+#=1
